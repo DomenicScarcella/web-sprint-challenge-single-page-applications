@@ -65,10 +65,7 @@ function App() {
         orders.map(order => {
           return (
             <div key={order.id}>
-              <p><strong>{order.name}</strong> has ordered a <strong>{order.size}</strong> pizza.<br />Toppings: {order.cheese}<br />
-              {order.pepperoni}<br />
-              {order.onions}<br />
-              {order.mushrooms}<br /></p>
+              <p><strong>{order.name}</strong> has ordered a <strong>{order.size}</strong> pizza.<br /></p>
             </div>
           )
         })
