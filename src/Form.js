@@ -45,28 +45,28 @@ export default function Form(props) {
                     <label>Pizza TOPPINGS:<br />
                         Extra Cheese
                         <input 
-                            checked={values.terms}
+                            checked={values.cheese}
                             onChange={onChange}
                             name='cheese'
                             type='checkbox'
                         /><br />
                         Pepperoni
                         <input 
-                            checked={values.terms}
+                            checked={values.pepperoni}
                             onChange={onChange}
                             name='pepperoni'
                             type='checkbox'
                         /><br />
                         Onions
                         <input 
-                            checked={values.terms}
+                            checked={values.onions}
                             onChange={onChange}
                             name='onions'
                             type='checkbox'
                         /><br />
                         Mushrooms
                         <input 
-                            checked={values.terms}
+                            checked={values.mushrooms}
                             onChange={onChange}
                             name='mushrooms'
                             type='checkbox'
@@ -77,7 +77,7 @@ export default function Form(props) {
                     <div>
                     <label>{`Special instructions? (optional)`}&nbsp;
                         <input 
-                            value={values.name}
+                            value={values.instr}
                             onChange={onChange}
                             name='instr'
                             type='text'
@@ -85,10 +85,9 @@ export default function Form(props) {
                     </label>
                     </div>
 
-                    <button id='submitButton' disabled={disabled}>Submit</button>
+                    <button id='submitButton' disabled={onChange}>Submit</button>
                     <div className='errors'>
                         <div>{errors.name}</div>
-                        <div>{errors.confirm}</div>
                     </div>
                 </div>
             </div>
